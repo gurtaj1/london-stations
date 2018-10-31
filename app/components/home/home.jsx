@@ -18,7 +18,11 @@ class Home extends React.Component {
    * @returns {JSX}
    */
   render () {
-
+    return (
+      <div className="home-container">
+        test
+      </div>
+    );
   }
 }
 
