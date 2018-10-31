@@ -1,0 +1,126 @@
+@import 'colours';
+@import 'mixins/buttons';
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin no-outline {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
+@mixin no-underline {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+@mixin vertical-align($position: relative, $top: 50%) {
+  position: $position;
+  top: $top;
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative) {
+  position: $position;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin vertical-horizontal-align($position: relative) {
+  position: $position;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin fill($position: absolute) {
+  position: $position;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+/// Hide text/elements
+@mixin el-off-screen {
+  position: absolute;
+  left: -999em;
+}
+
+@mixin before-after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin font-smoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin responsive-bg($url1x, $url2x) {
+  background-image: url(#{$url1x});
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(#{$url2x});
+  }
+}

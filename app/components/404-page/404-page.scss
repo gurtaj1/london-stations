@@ -1,0 +1,47 @@
+@import 'client/shared/styles/colours';
+@import 'client/shared/styles/typography';
+
+.error-page {
+  background-color: $color-off-white;
+  min-height: 75vh;
+  text-align: center;
+  color: $color-carbon-black;
+
+  &__404 {
+    @include type-primary-black;
+    @include font-style(72px, 76px);
+    padding-top: 80px;
+  }
+
+  &__main-msg {
+    @include type-primary;
+    @include font-style(20px, 32px);
+    padding-top: 33px;
+  }
+
+  &__description {
+    @include type-secondary;
+    @include font-style(16px, 26px);
+    padding-top: 33px;
+  }
+
+  &__button {
+    margin-top: 75px;
+  }
+
+  &__home-button {
+    @include type-supporting-label($color-white);
+    background-color: $color-carbon-black-light;
+    padding: 19px 40px;
+    border-radius: 12px;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-carbon-black-hover;
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+}

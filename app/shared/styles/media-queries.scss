@@ -1,0 +1,112 @@
+@import 'client/shared/styles/variables';
+
+// Respond up (e.g. Tablet width, and above)
+@mixin mq-large-mobile {
+  @media (min-width: $large-mobile-min) {
+    @content;
+  }
+}
+
+@mixin mq-tablet {
+  @media (min-width: $tablet-min) {
+    @content;
+  }
+}
+
+@mixin mq-desktop {
+  @media (min-width: $desktop-min) {
+    @content;
+  }
+}
+
+@mixin mq-large-desktop {
+  @media (min-width: $large-desktop-min) {
+    @content;
+  }
+}
+
+@mixin mq-xlarge-desktop {
+  @media (min-width: $xlarge-desktop-min) {
+    @content;
+  }
+}
+
+@mixin mq-xxlarge-desktop {
+  @media (min-width: $xxlarge-desktop-min) {
+    @content;
+  }
+}
+
+// Respond down (e.g. Tablet width, and below)
+@mixin mq-large-mobile-down {
+  @media (max-width: $large-mobile-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-down {
+  @media (max-width: $desktop-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-desktop-down {
+  @media (max-width: $large-desktop-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-large-desktop-down {
+  @media (max-width: $xlarge-desktop-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-xlarge-desktop-down {
+  @media (max-width: $xxlarge-desktop-min - 1) {
+    @content;
+  }
+}
+
+// Respond only (e.g. Tablet-width only)
+@mixin mq-mobile-only {
+  @media (max-width: $large-mobile-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-large-mobile-only {
+  @media (min-width: $large-mobile-min) and (max-width: $tablet-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-only {
+  @media (min-width: $tablet-min) and (max-width: $desktop-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-desktop-only {
+  @media (min-width: $desktop-min) and (max-width: $large-desktop-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-large-desktop-only {
+  @media (min-width: $large-desktop-min) and (max-width: $xlarge-desktop-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-xlarge-desktop-only {
+  @media (min-width: $xlarge-desktop-min) and (max-width: $xxlarge-desktop-min - 1) {
+    @content;
+  }
+}
+
+@mixin mq-xxlarge-desktop-only {
+  @media (min-width: $xxlarge-desktop-min) {
+    @content;
+  }
+}

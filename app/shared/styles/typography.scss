@@ -1,0 +1,14 @@
+@import 'client/shared/styles/mixins';
+@import 'client/shared/styles/fonts';
+@import 'client/shared/styles/colours';
+
+@mixin reset-type {
+  margin: 0;
+}
+
+@mixin type-primary {
+  @include font-smoothing;
+  @include reset-type;
+
+  font-family: 'helvetica', sans-serif;
+}

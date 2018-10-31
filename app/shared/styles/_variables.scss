@@ -1,0 +1,15 @@
+// Breakpoints
+$breakpoints: (
+  large-mobile: 375px,
+  tablet: 600px,
+  desktop: 960px,
+  large-desktop: 1280px,
+  xlarge-desktop: 1440px,
+  xxlarge-desktop: 1600px
+);
+$large-mobile-min: map-get($breakpoints, large-mobile);
+$tablet-min: map-get($breakpoints, tablet);
+$desktop-min: map-get($breakpoints, desktop);
+$large-desktop-min: map-get($breakpoints, large-desktop);
+$xlarge-desktop-min: map-get($breakpoints, xlarge-desktop);
+$xxlarge-desktop-min: map-get($breakpoints, xxlarge-desktop);

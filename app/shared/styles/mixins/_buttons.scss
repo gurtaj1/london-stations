@@ -1,0 +1,38 @@
+/*
+ * Button mixins
+ */
+@import 'client/shared/styles/variables';
+@import 'client/shared/styles/colours';
+
+@mixin button-reset {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background-image: none;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+@mixin button {
+  @include button-reset;
+  @include type-primary;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1;
+  color: $color-white;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 24px;
+  background-color: $color-carbon-black-light;
+  transition: background-color, color;
+  transition-duration: $animation-duration / 2;
+  transition-timing-function: $animation-easing;
+
+  &:hover,
+  &:focus {
+    background-color: black;
+  }
+}

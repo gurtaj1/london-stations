@@ -1,0 +1,58 @@
+@import 'client/shared/styles/media-queries';
+
+$container-max-width: 1194px;
+
+// Content wrapper inner gutter
+$mobile-gutter: 18px;
+$tablet-gutter: 9px;
+$desktop-gutter: 24px;
+$mobile-width-gutter: calc(100% - #{$mobile-gutter * 2});
+$tablet-width-gutter: calc(100% - #{$tablet-gutter * 2});
+
+// Grid system
+$grid-base-width: 1164 !default;
+$grid-base-col-width: 73 !default;
+$grid-base-gutter-width: 24 !default;
+$grid-cols: 12 !default;
+$grid-col-width: percentage($grid-base-col-width / $grid-base-width);
+$grid-gutter-width: percentage($grid-base-gutter-width / $grid-base-width);
+
+@mixin container {
+  position: relative;
+  width: 100%;
+  max-width: $container-max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $mobile-gutter / 2;
+  padding-left: $mobile-gutter / 2;
+
+  @include mq-tablet {
+    padding-right: $tablet-gutter / 2;
+    padding-left: $tablet-gutter / 2;
+  }
+
+  @include mq-desktop {
+    padding-right: $desktop-gutter / 2;
+    padding-left: $desktop-gutter / 2;
+  }
+
+  @include mq-large-desktop {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@mixin span-columns($grid-cols) {
+  float: left;
+  width: ($grid-col-width + $grid-gutter-width) * $grid-cols - $grid-gutter-width;
+  margin-right: $grid-gutter-width / 2;
+  margin-left: $grid-gutter-width / 2;
+}
+
+@mixin push-column($grid-cols) {
+  margin-left: ($grid-col-width + $grid-gutter-width) * $grid-cols;
+}
+
+@mixin row {
+  @include clearfix;
+}
