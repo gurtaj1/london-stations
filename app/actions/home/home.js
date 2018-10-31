@@ -1,6 +1,5 @@
 export const HOME_PAGE_REQUEST = 'HOME_PAGE_REQUEST';
 export const HOME_PAGE_SUCCESS = 'HOME_PAGE_SUCCESS';
-
 export const HOME_PAGE_FAILURE = 'HOME_PAGE_FAILURE';
 
 /**
@@ -21,7 +20,7 @@ export const receiveHomePage = response => ({
 });
 
 /**
- * receiveHomePage
+ * failedHomeRequest
  * @returns {{type: string, set: Object}}
  */
 export const failedHomeRequest = error => ({

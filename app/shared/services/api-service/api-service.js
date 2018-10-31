@@ -1,5 +1,4 @@
 import axios from 'axios';
-import merge from 'lodash/merge';
 
 export default class ApiService {
   /**
@@ -8,7 +7,7 @@ export default class ApiService {
    * @param {Object} config - any configuration parameters
    * @returns {Promise}
    */
-  static get (endpoint, config = {}) {
-    return axios.get(endpoint, merge({}, ApiService.setConfig(), config));
+  static get (endpoint) {
+    return axios.get(endpoint);
   }
 }

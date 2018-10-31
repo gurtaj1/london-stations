@@ -6,8 +6,7 @@ import {
 
 export const defaultState = {
   isFetching: false,
-  homeData: undefined,
-  data: undefined
+  homeData: undefined
 };
 
 /**

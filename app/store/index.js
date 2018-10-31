@@ -5,7 +5,6 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import createMemoryHistory from 'history/createMemoryHistory';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import ApiService from 'client/shared/services/api-service/api-service';
-import EntityFactory from 'client/shared/factories/entity-factory/entity-factory';
 
 import { IS_BROWSER } from 'client/shared/helpers/environments-helper/environments-helper';
 import rootReducer from 'client/reducers';
@@ -18,11 +17,7 @@ const history = IS_BROWSER ? createBrowserHistory() : createMemoryHistory();
  */
 export const epicMiddleware = createEpicMiddleware({
   dependencies: {
-    socialAuthenticate: ApiService.post,
-    syncSubscriptions: ApiService.get,
-    getUsersPlan: ApiService.get,
-    getUserData: ApiService.get,
-    getEntityByUrl: EntityFactory.getEntityByUrl
+    getHomeData: ApiService.get
   }
 });
 
