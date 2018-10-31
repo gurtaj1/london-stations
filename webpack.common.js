@@ -9,7 +9,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const appBaseDirectory = path.join(__dirname, 'app');
 const staticAssetsDirectory = path.join(__dirname, 'static/assets');
-const svgIconsDirectory = path.join(__dirname, 'app/client/assets/svg/icons/');
+const svgIconsDirectory = path.join(__dirname, 'client/assets/svg/icons/');
 
 const commonConfig = {
   devtool: 'cheap-module-source-map',
@@ -39,7 +39,7 @@ const commonConfig = {
       filename: 'style.css'
     }),
     new StyleLintPlugin({
-      files: ['app/**/**/*.scss'],
+      files: ['**/**/*.scss'],
       syntax: 'scss'
     })
   ],

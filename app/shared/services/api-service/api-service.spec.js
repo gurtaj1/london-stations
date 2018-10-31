@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AxiosMockAdapter from 'axios-mock-adapter';
-import ApiService from 'client/shared/services/api-service/api-service';
-import cookies from 'client/shared/factories/cookie-factory/cookie-factory';
+import ApiService from 'shared/services/api-service/api-service';
+import cookies from 'shared/factories/cookie-factory/cookie-factory';
 import fixture from './api-service.fixture';
 
 // Mock all axios requests

@@ -1,5 +1,5 @@
-import HomeContainer from 'client/containers/home-container/home-container';
-import Page404 from 'client/components/404-page/404-page';
+import HomeContainer from 'containers/home-container/home-container';
+import Page404 from 'components/404-page/404-page';
 
 const routes = [
   {

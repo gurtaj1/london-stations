@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Page404 from 'client/components/404-page/404-page.jsx';
+import Page404 from 'components/404-page/404-page.jsx';
 
 describe('<Page404 />', () => {
   it('should export a class', () => {

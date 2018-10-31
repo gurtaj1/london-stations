@@ -1,8 +1,8 @@
 import {
   HOME_PAGE_REQUEST,
   HOME_PAGE_SUCCESS,
-  HOME_PAGE_FAILURE,
-} from 'client/actions/home/home';
+  HOME_PAGE_FAILURE
+} from 'actions/home/home';
 
 export const defaultState = {
   isFetching: false,

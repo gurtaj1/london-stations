@@ -1,8 +1,8 @@
 /*
  * Button mixins
  */
-@import 'client/shared/styles/variables';
-@import 'client/shared/styles/colours';
+@import 'shared/styles/variables';
+@import 'shared/styles/colours';
 
 @mixin button-reset {
   padding: 0;

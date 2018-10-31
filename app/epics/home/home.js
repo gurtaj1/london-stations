@@ -1,13 +1,11 @@
 import { Observable, of } from 'rxjs';
 import { switchMap, map, catchError } from 'rxjs/operators';
 
-import { apiFilters } from 'client/shared/constants/api-filters';
-
 import {
   HOME_PAGE_REQUEST,
   receiveHomePage,
   failedHomeRequest
-} from 'client/actions/home/home';
+} from 'actions/home/home';
 
 const requests = [];
 let homeSet = [];

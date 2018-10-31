@@ -5,8 +5,8 @@ import {
   REQUEST_HOME_ITEMS,
   RECEIVE_HOME_ITEMS,
   FAILED_HOME_ITEMS_REQUEST
-} from 'client/actions/home/home';
-import homeReducer, { defaultState } from 'client/reducers/home/home';
+} from 'actions/home/home';
+import homeReducer, { defaultState } from 'reducers/home/home';
 import fixture from './home.fixture';
 
 describe('Reducers', () => {

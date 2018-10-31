@@ -1,7 +1,7 @@
 import React from 'react';
 import configureMockStore from 'redux-mock-store';
 import { shallow } from 'enzyme';
-import Home from 'app/components/home/home';
+import Home from 'components/home/home';
 
 describe('LS.Components', () => {
   describe('Home Container', () => {

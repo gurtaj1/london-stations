@@ -8,7 +8,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-const svgIconsDirectory = path.join(__dirname, 'app/client/assets/svg/icons/');
+const svgIconsDirectory = path.join(__dirname, 'client/assets/svg/icons/');
 
 const commonConfig = require('./webpack.common.js');
 

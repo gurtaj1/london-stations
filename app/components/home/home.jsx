@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from 'app/components/home/home.scss';
+import styles from 'components/home/home.scss';
 
 class Home extends React.Component {
   /**

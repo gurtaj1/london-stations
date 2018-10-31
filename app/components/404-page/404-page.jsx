@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Translate } from 'react-translated';
 
-import styles from 'client/components/404-page/404-page.scss';
+import styles from 'components/404-page/404-page.scss';
 
 /**
  * Page404 display component

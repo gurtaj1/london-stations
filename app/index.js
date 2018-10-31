@@ -1,20 +1,20 @@
 import React from 'react';
-import 'client/shared/polyfill/polyfill';
+import 'shared/polyfill/polyfill';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import { getUserLocaleCookie } from 'client/shared/utils/cookie-jar/cookie-jar';
-import { importImages } from 'client/shared/utils/images/images';
+import { getUserLocaleCookie } from 'shared/utils/cookie-jar/cookie-jar';
+import { importImages } from 'shared/utils/images/images';
 
-import configureStore, { epicMiddleware } from 'client/store';
-import rootEpic from 'client/epics';
-import AppContainer from 'client/containers/app-container/app-container';
-import ScrollToTop from 'client/components/scroll-to-top/scroll-to-top';
+import configureStore, { epicMiddleware } from 'store';
+import rootEpic from 'epics';
+import AppContainer from 'containers/app-container/app-container';
+import ScrollToTop from 'components/scroll-to-top/scroll-to-top';
 
-import 'client/index.global.scss';
+import 'index.global.scss';
 
 /* imports all the svgs inside the client/assets/svg/icons folder */
-importImages(require.context('client/assets/svg/icons', false, /\.(png|jpe?g|svg)$/));
+importImages(require.context('assets/svg/icons', false, /\.(png|jpe?g|svg)$/));
 
 const store = configureStore({
   ...window.__initialData__
