@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
@@ -31,9 +30,9 @@ const commonConfig = {
     }),
     new HtmlWebpackPlugin({
       title: 'Client Template',
-      template: './app/client/index.ejs',
+      template: './app/index.html',
       filename: '../index.html',
-      favicon: './app/client/assets/favicons/favicon.png'
+      favicon: './app/assets/favicons/favicon.png'
     }),
     new ExtractTextPlugin({
       filename: 'style.css'
