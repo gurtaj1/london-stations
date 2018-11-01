@@ -1,4 +1,4 @@
-dist/*
+static/*
 app/vendor.js
 app/**/*.fixture.js
 *.scss
