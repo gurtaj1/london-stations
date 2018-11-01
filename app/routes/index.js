@@ -1,4 +1,4 @@
-import HomeContainer from 'containers/home-container/home-container';
+import HomeContainer from 'containers/app-container/home-container/home-container';
 import Page404 from 'components/404-page/404-page';
 
 const routes = [
