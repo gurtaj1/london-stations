@@ -2,14 +2,12 @@ import { applyMiddleware, createStore } from 'redux';
 import { createEpicMiddleware } from 'redux-observable';
 import { routerMiddleware } from 'react-router-redux';
 import createBrowserHistory from 'history/createBrowserHistory';
-import createMemoryHistory from 'history/createMemoryHistory';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import ApiService from 'shared/services/api-service/api-service';
 
-import { IS_BROWSER } from 'shared/helpers/environments-helper/environments-helper';
 import rootReducer from 'reducers';
 
-const history = IS_BROWSER ? createBrowserHistory() : createMemoryHistory();
+const history = createBrowserHistory();
 
 /**
  * Injecting Dependencies Into Epics
@@ -17,7 +15,7 @@ const history = IS_BROWSER ? createBrowserHistory() : createMemoryHistory();
  */
 export const epicMiddleware = createEpicMiddleware({
   dependencies: {
-    getHomeData: ApiService.get
+    get: ApiService.get
   }
 });
 

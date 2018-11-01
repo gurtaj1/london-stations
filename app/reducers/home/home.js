@@ -9,6 +9,24 @@ export const defaultState = {
   homeData: undefined
 };
 
+const refineStationData = data => {
+  const stations = data.data.stopPoints;
+  const stationsRefined = stations.map(station => {
+    const lines = station.lineModeGroups.map(lineModeGroup =>
+      lineModeGroup.modeName === 'tube'
+        ? lineModeGroup.lineIdentifier.map(line => line)
+        : []
+    );
+
+    return {
+      name: station.commonName,
+      lines
+    };
+  });
+
+  return stationsRefined;
+};
+
 /**
  * Reducer for updating the Home Page
  * @param  {Object} state
@@ -23,7 +41,8 @@ export default function (state = defaultState, action) {
       });
     case HOME_PAGE_SUCCESS:
       return Object.assign({}, state, {
-        homeData: action.payload
+        isFetching: false,
+        homeData: refineStationData(action.payload)
       });
     case HOME_PAGE_FAILURE:
       return Object.assign({}, state, {

@@ -16,7 +16,7 @@ export const requestHomePage = () => ({
  */
 export const receiveHomePage = response => ({
   type: HOME_PAGE_SUCCESS,
-  payload: response.data.objects[0]
+  payload: response
 });
 
 /**
