@@ -28,7 +28,6 @@
     "url": ""
   },
   "author": "Gurtaj",
-  "homepage": "",
   "devDependencies": {
     "axios-mock-adapter": "^1.15.0",
     "babel-cli": "^6.24.1",
