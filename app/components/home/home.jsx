@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Station from 'components/stations/stations';
+import Station from 'components/station/station';
 
 import styles from 'components/home/home.scss';
 

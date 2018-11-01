@@ -1,8 +1,6 @@
 import axios from 'axios';
 import AxiosMockAdapter from 'axios-mock-adapter';
 import ApiService from 'shared/services/api-service/api-service';
-import cookies from 'shared/factories/cookie-factory/cookie-factory';
-import fixture from './api-service.fixture';
 
 // Mock all axios requests
 const mockAxios = new AxiosMockAdapter(axios);
@@ -13,10 +11,6 @@ describe('Shared', () => {
   describe('Services', () => {
     describe('ApiService', () => {
       describe('get', () => {
-        afterEach(() => {
-          cookies.remove('jwtToken', 'state');
-        });
-
         const spiedGet = jest.spyOn(axios, 'get');
 
         it('should create a get request to the correct endpoint', () => {

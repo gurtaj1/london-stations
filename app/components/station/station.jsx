@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import styles from 'components/stations/stations.scss';
+import styles from 'components/station/station.scss';
 
 /**
  * Station Component

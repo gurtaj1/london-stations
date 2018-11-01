@@ -1,7 +1,7 @@
-const Merge = require('webpack-merge');
+const Merge = require('webpack-merge'); // eslint-disable-line import/no-extraneous-dependencies
 const CommonConfig = require('./webpack.common.js');
 
-const WriteFilePlugin = require('write-file-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
 
 module.exports = Merge(CommonConfig, {
   plugins: [

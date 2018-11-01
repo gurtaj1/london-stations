@@ -1,10 +1,7 @@
 import {
   HOME_PAGE_REQUEST,
   HOME_PAGE_SUCCESS,
-  HOME_PAGE_FAILURE,
-  REQUEST_HOME_ITEMS,
-  RECEIVE_HOME_ITEMS,
-  FAILED_HOME_ITEMS_REQUEST
+  HOME_PAGE_FAILURE
 } from 'actions/home/home';
 import homeReducer, { defaultState } from 'reducers/home/home';
 import fixture from './home.fixture';

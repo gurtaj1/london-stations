@@ -63,5 +63,5 @@ describe('Actions', () => {
         expect(store.getActions()).toEqual(expect.arrayContaining([expectedAction]));
       });
     });
-  })
+  });
 });

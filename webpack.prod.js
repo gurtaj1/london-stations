@@ -1,12 +1,12 @@
 const path = require('path');
-const webpack = require('webpack');
-const Merge = require('webpack-merge');
-const nodeExternals = require('webpack-node-externals');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack'); // eslint-disable-line import/no-extraneous-dependencies
+const Merge = require('webpack-merge'); // eslint-disable-line import/no-extraneous-dependencies
+const nodeExternals = require('webpack-node-externals'); // eslint-disable-line import/no-extraneous-dependencies
+const CopyWebpackPlugin = require('copy-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
 
-const CompressionPlugin = require('compression-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
+const ExtractTextPlugin = require('extract-text-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
 
 const svgIconsDirectory = path.join(__dirname, 'client/assets/svg/icons/');
 
@@ -44,12 +44,12 @@ const serverConfig = {
     }),
     new CopyWebpackPlugin([
       {
-        from: appBaseDirectory + '/client/assets/sitemap.xml',
-        to: appBaseDirectory + '/sitemap.xml'
+        from: `${appBaseDirectory}/client/assets/sitemap.xml`,
+        to: `${appBaseDirectory}/sitemap.xml`
       },
       {
-        from: appBaseDirectory + '/client/assets/robots.txt',
-        to: appBaseDirectory + '/robots.txt'
+        from: `${appBaseDirectory}/client/assets/robots.txt`,
+        to: `${appBaseDirectory}/robots.txt`
       }
     ])
   ],
