@@ -5,14 +5,13 @@
 @import 'shared/styles/grid';
 @import 'shared/styles/media-queries';
 @import 'shared/styles/mixins';
-@import 'shared/styles/player';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  color: $color-carbon-black;
+  color: $color-black;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -30,7 +29,7 @@ a {
   &:focus,
   &:active {
     text-decoration: underline;
-    color: $color-carbon-black;
+    color: $color-black;
   }
 }
 

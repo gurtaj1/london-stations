@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
+import Station from 'components/stations/stations';
 
 import styles from 'components/home/home.scss';
 
-class Home extends React.Component {
+export default class Home extends Component {
   /**
-   * @constructor
-   * @param {Object} props
+   * componentDidMount hook
    */
-  constructor (props) {
-    super(props);
+  componentDidMount () {
+    this.props.requestHomePage();
   }
-
 
   /**
    * React render method
@@ -19,13 +19,39 @@ class Home extends React.Component {
    */
   render () {
     return (
-      <div className="home-container">
-        test
+      <div className={styles['home']}>
+        {
+          !this.props.home.homeData
+            ? 'loading'
+            : this.props.home.homeData.map(station =>
+              (
+              <Station
+                key={station.name}
+                name={station.name}
+                lines={station.lines}
+              />
+              )
+            )
+        }
       </div>
     );
   }
 }
 
 Home.propTypes = {
+  requestHomePage: PropTypes.func.isRequired,
+  home: PropTypes.shape({
+    isFetching: PropTypes.bool,
+    homeData: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string,
+      lines: PropTypes.arrayOf(PropTypes.string)
+    }))
+  })
+};
 
+Home.defaultProps = {
+  home: {
+    isFetching: true,
+    homeData: []
+  }
 };

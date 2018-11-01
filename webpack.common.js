@@ -13,7 +13,7 @@ const svgIconsDirectory = path.join(__dirname, 'client/assets/svg/icons/');
 const commonConfig = {
   devtool: 'cheap-module-source-map',
   entry: {
-    app: ['babel-polyfill', './app/browser/index.js']
+    app: ['babel-polyfill', './app/index.jsx']
   },
   output: {
     path: staticAssetsDirectory,
