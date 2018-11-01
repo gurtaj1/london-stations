@@ -13,6 +13,12 @@ export default class Home extends Component {
     this.props.requestHomePage();
   }
 
+  componentDidUpdate () {
+    if (this.props.home.error) {
+      this.props.history.push('/404');
+    }
+  }
+
   /**
    * React render method
    * @returns {JSX}
@@ -45,13 +51,18 @@ Home.propTypes = {
     homeData: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string,
       lines: PropTypes.arrayOf(PropTypes.string)
-    }))
-  })
+    })),
+    error: PropTypes.shape({})
+  }),
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired
+  }).isRequired
 };
 
 Home.defaultProps = {
   home: {
     isFetching: true,
-    homeData: []
+    homeData: [],
+    error: null
   }
 };
