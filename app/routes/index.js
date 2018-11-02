@@ -1,5 +1,5 @@
-import HomeContainer from 'containers/app-container/home-container/home-container';
-import Page404 from 'components/404-page/404-page';
+import HomeContainer from 'features/home/home-container';
+import Page404 from 'features/404-page/404-page';
 
 const routes = [
   {

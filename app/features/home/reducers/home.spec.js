@@ -45,10 +45,18 @@ describe('Reducers', () => {
         };
         const expectedState = {
           isFetching: false,
-          homeData: payload
+          homeData: [
+            {
+              name: 'station-name',
+              lines: [
+                'circle',
+                'district'
+              ]
+            }
+          ]
         };
         const result = homeReducer(defaultState, action);
-        expect(result).toEqual(expect.objectContaining(expectedState));
+        expect(result).toEqual(expectedState);
       });
     });
 

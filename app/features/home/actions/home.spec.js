@@ -32,7 +32,7 @@ describe('Actions', () => {
       const { response } = fixture;
       const expectedAction = {
         type: actions.HOME_PAGE_SUCCESS,
-        payload: response.data
+        payload: response
       };
 
       it('should return an expected action object', () => {

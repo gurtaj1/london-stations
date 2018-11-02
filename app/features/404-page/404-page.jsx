@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from 'components/404-page/404-page.scss';
+import styles from 'features/404-page/404-page.scss';
 
 /**
  * Page404 display component

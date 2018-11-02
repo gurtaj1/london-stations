@@ -26,20 +26,14 @@ ShallowWrapper {
         <div
           className="error-page__main-msg"
         >
-          <Subscribe
-            text="This page does not exist."
-          />
+          This page does not exist.
         </div>,
         <div
           className="error-page__description"
         >
-          <Subscribe
-            text="The page you're looking for has either been deleted or never existed."
-          />
+          The page you're looking for has either been deleted or never existed.
           <br />
-          <Subscribe
-            text="We apologise for any inconvenience."
-          />
+          We apologise for any inconvenience.
         </div>,
         <div
           className="error-page__button"
@@ -49,9 +43,7 @@ ShallowWrapper {
             replace={false}
             to="/"
           >
-            <Subscribe
-              text="Go back to home"
-            />
+            Go back to home
           </Link>
         </div>,
       ],
@@ -76,23 +68,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Subscribe
-            text="This page does not exist."
-          />,
+          "children": "This page does not exist.",
           "className": "error-page__main-msg",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "text": "This page does not exist.",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "rendered": "This page does not exist.",
         "type": "div",
       },
       Object {
@@ -101,29 +81,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Subscribe
-              text="The page you're looking for has either been deleted or never existed."
-            />,
+            "The page you're looking for has either been deleted or never existed.",
             <br />,
-            <Subscribe
-              text="We apologise for any inconvenience."
-            />,
+            "We apologise for any inconvenience.",
           ],
           "className": "error-page__description",
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "text": "The page you're looking for has either been deleted or never existed.",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "The page you're looking for has either been deleted or never existed.",
           Object {
             "instance": null,
             "key": undefined,
@@ -133,17 +99,7 @@ ShallowWrapper {
             "rendered": null,
             "type": "br",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "text": "We apologise for any inconvenience.",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "We apologise for any inconvenience.",
         ],
         "type": "div",
       },
@@ -157,9 +113,7 @@ ShallowWrapper {
             replace={false}
             to="/"
           >
-            <Subscribe
-              text="Go back to home"
-            />
+            Go back to home
           </Link>,
           "className": "error-page__button",
         },
@@ -169,25 +123,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Subscribe
-              text="Go back to home"
-            />,
+            "children": "Go back to home",
             "className": "error-page__home-button",
             "replace": false,
             "to": "/",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "text": "Go back to home",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": "Go back to home",
           "type": [Function],
         },
         "type": "div",
@@ -210,20 +152,14 @@ ShallowWrapper {
           <div
             className="error-page__main-msg"
           >
-            <Subscribe
-              text="This page does not exist."
-            />
+            This page does not exist.
           </div>,
           <div
             className="error-page__description"
           >
-            <Subscribe
-              text="The page you're looking for has either been deleted or never existed."
-            />
+            The page you're looking for has either been deleted or never existed.
             <br />
-            <Subscribe
-              text="We apologise for any inconvenience."
-            />
+            We apologise for any inconvenience.
           </div>,
           <div
             className="error-page__button"
@@ -233,9 +169,7 @@ ShallowWrapper {
               replace={false}
               to="/"
             >
-              <Subscribe
-                text="Go back to home"
-              />
+              Go back to home
             </Link>
           </div>,
         ],
@@ -260,23 +194,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Subscribe
-              text="This page does not exist."
-            />,
+            "children": "This page does not exist.",
             "className": "error-page__main-msg",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "text": "This page does not exist.",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": "This page does not exist.",
           "type": "div",
         },
         Object {
@@ -285,29 +207,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Subscribe
-                text="The page you're looking for has either been deleted or never existed."
-              />,
+              "The page you're looking for has either been deleted or never existed.",
               <br />,
-              <Subscribe
-                text="We apologise for any inconvenience."
-              />,
+              "We apologise for any inconvenience.",
             ],
             "className": "error-page__description",
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "text": "The page you're looking for has either been deleted or never existed.",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+            "The page you're looking for has either been deleted or never existed.",
             Object {
               "instance": null,
               "key": undefined,
@@ -317,17 +225,7 @@ ShallowWrapper {
               "rendered": null,
               "type": "br",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "text": "We apologise for any inconvenience.",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+            "We apologise for any inconvenience.",
           ],
           "type": "div",
         },
@@ -341,9 +239,7 @@ ShallowWrapper {
               replace={false}
               to="/"
             >
-              <Subscribe
-                text="Go back to home"
-              />
+              Go back to home
             </Link>,
             "className": "error-page__button",
           },
@@ -353,25 +249,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <Subscribe
-                text="Go back to home"
-              />,
+              "children": "Go back to home",
               "className": "error-page__home-button",
               "replace": false,
               "to": "/",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "text": "Go back to home",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
+            "rendered": "Go back to home",
             "type": [Function],
           },
           "type": "div",

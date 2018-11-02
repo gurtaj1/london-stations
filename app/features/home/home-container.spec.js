@@ -1,4 +1,4 @@
-import HomeContainer from 'containers/home-container/home-container';
+import HomeContainer from 'features/home/home-container';
 
 describe('LS.Containers', () => {
   describe('Home Container', () => {

@@ -2,7 +2,7 @@ import {
   HOME_PAGE_REQUEST,
   HOME_PAGE_SUCCESS,
   HOME_PAGE_FAILURE
-} from 'actions/home/home';
+} from 'features/home/actions/home';
 
 export const defaultState = {
   isFetching: false,

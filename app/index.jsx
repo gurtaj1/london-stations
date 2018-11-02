@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 import configureStore, { epicMiddleware } from 'store';
-import rootEpic from 'epics';
-import AppContainer from 'containers/app-container/app-container';
+import rootEpic from 'root-epic';
+import AppContainer from 'features/app/app-container';
 
 import 'index.global.scss';
 

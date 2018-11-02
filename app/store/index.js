@@ -5,7 +5,7 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import ApiService from 'shared/services/api-service/api-service';
 
-import rootReducer from 'reducers';
+import rootReducer from 'root-reducer';
 
 const history = createBrowserHistory();
 

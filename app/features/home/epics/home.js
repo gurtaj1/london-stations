@@ -5,7 +5,7 @@ import {
   HOME_PAGE_REQUEST,
   receiveHomePage,
   failedHomeRequest
-} from 'actions/home/home';
+} from 'features/home/actions/home';
 
 const fetchHomePage = (action$, store, { get }) => action$
   .ofType(HOME_PAGE_REQUEST)

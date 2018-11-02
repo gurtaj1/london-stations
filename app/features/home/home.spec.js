@@ -1,4 +1,4 @@
-import Home from 'components/home/home';
+import Home from 'features/home/home';
 
 describe('LS.Components', () => {
   describe('Home Container', () => {

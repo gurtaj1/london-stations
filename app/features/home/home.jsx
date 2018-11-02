@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Station from 'components/home/station/station';
+import Station from 'features/home/components/station/station';
 
-import styles from 'components/home/home.scss';
+import styles from 'features/home/home.scss';
 
 export default class Home extends Component {
   /**
