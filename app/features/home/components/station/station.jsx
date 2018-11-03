@@ -18,7 +18,14 @@ const tubeLineColors = {
   picadilly: '#000099',
   victoria: '#0099CC',
   'waterloo-city': '#66CCCC'
-}
+};
+
+const capitaliseEachWord = string => {
+  const modifiedString = string.replace('-', ' and ');
+  const newString = modifiedString.replace(/\b\w/g, letter => letter.toUpperCase());
+
+  return newString;
+};
 
 /**
  * Station Component
@@ -41,7 +48,7 @@ export default function Station ({
           tubeLines.map(line => (
             <ListItem
               key={line}
-              listItem={line}
+              listItem={capitaliseEachWord(line)}
               inlineStyleColor={tubeLineColors[line]}
             />
           ))
