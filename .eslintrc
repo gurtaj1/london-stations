@@ -43,7 +43,7 @@
     "eol-last": "warn",
     "key-spacing": ["warn", { "beforeColon": false, "afterColon": true }],
     "keyword-spacing": "warn",
-    "linebreak-style": ["warn", "unix"],
+    "linebreak-style": ["warn", "windows"],
     "lines-around-comment": ["warn", { "beforeBlockComment": false, "afterBlockComment": false }],
     "max-depth": ["warn", 2],
     "max-len": ["warn", { "code": 140, "tabWidth": 4, "ignoreUrls": true }],
