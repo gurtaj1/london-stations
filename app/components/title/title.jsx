@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from 'components/title/title.scss';
@@ -8,16 +8,15 @@ import styles from 'components/title/title.scss';
  * @param {title} param0
  */
 export default function Title ({
-    title
-  }) {
-    return (
-        <div className={styles['title']}>
-            {title}
-        </div>
-    );
-  }
-  
-  Title.propTypes = {
-    title: PropTypes.string.isRequired
-  };
-  
+  title
+}) {
+  return (
+    <div className={styles['title']}>
+      {title}
+    </div>
+  );
+}
+
+Title.propTypes = {
+  title: PropTypes.string.isRequired
+};

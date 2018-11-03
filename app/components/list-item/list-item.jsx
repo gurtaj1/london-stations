@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from 'components/list-item/list-item.scss';
@@ -8,15 +8,21 @@ import styles from 'components/list-item/list-item.scss';
  * @param {ListItem} param0
  */
 export default function ListItem ({
-    listItem
-  }) {
-    return (
-        <div className={styles['list-item']}>
-            {listItem}
-        </div>
-    );
-  }
-  
-  ListItem.propTypes = {
-    listItem: PropTypes.string.isRequired
-  };
+  listItem,
+  inlineStyleColor
+}) {
+  return (
+    <div className={styles['list-item']} style={{ color: inlineStyleColor }}>
+      {listItem}
+    </div>
+  );
+}
+
+ListItem.propTypes = {
+  listItem: PropTypes.string.isRequired,
+  inlineStyleColor: PropTypes.string
+};
+
+ListItem.defaultProps = {
+  inlineStyleColor: 'black'
+};

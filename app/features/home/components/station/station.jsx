@@ -6,6 +6,20 @@ import ListItem from 'components/list-item/list-item';
 
 import styles from 'features/home/components/station/station.scss';
 
+const tubeLineColors = {
+  bakerloo: '#996633',
+  central: '#CC3333',
+  circle: '#FFCC00',
+  district: '#006633',
+  'hammersmith-city': '#CC9999',
+  jubilee: '#868F98',
+  metropilitan: '#660066',
+  northern: '#000000',
+  picadilly: '#000099',
+  victoria: '#0099CC',
+  'waterloo-city': '#66CCCC'
+}
+
 /**
  * Station Component
  * @param {name, tubeLines} param0
@@ -28,6 +42,7 @@ export default function Station ({
             <ListItem
               key={line}
               listItem={line}
+              inlineStyleColor={tubeLineColors[line]}
             />
           ))
         }
