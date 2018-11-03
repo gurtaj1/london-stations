@@ -12,13 +12,13 @@ export const defaultState = {
 const refineStationData = data => {
   const stations = data.data.stopPoints;
   const stationsRefined = stations.map(station => {
-    const lines = station.lineModeGroups
+    const tubeLines = station.lineModeGroups
       .filter(lineModeGroup => lineModeGroup.modeName === 'tube')
       .map(lineModeGroup => lineModeGroup.lineIdentifier.map(line => line));
 
     return {
       name: station.commonName,
-      lines: lines[0]
+      tubeLines: tubeLines[0]
     };
   });
 

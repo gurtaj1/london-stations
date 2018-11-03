@@ -37,7 +37,7 @@ export default class Home extends Component {
               <Station
                 key={station.name}
                 name={station.name}
-                lines={station.lines}
+                tubeLines={station.tubeLines}
               />
               )
             )
@@ -53,7 +53,7 @@ Home.propTypes = {
     isFetching: PropTypes.bool,
     homeData: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string,
-      lines: PropTypes.arrayOf(PropTypes.string)
+      tubeLines: PropTypes.arrayOf(PropTypes.string)
     })),
     error: PropTypes.shape({})
   }),

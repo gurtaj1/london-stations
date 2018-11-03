@@ -1,24 +1,35 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
+import Title from 'components/title/title';
+import ListItem from 'components/list-item/list-item';
+
 import styles from 'features/home/components/station/station.scss';
 
 /**
  * Station Component
- * @param {name, lines} param0
+ * @param {name, tubeLines} param0
  */
 export default function Station ({
   name,
-  lines
+  tubeLines
 }) {
   return (
     <Fragment>
       <div className={styles['station-name']}>
-        {name}
+        <Title
+          key={name}
+          title={name}
+        />
       </div>
       <div className={styles['lines-list']}>
         {
-          lines.map(line => line)
+          tubeLines.map(line => (
+            <ListItem
+              key={line}
+              listItem={line}
+            />
+          ))
         }
       </div>
     </Fragment>
@@ -27,5 +38,5 @@ export default function Station ({
 
 Station.propTypes = {
   name: PropTypes.string.isRequired,
-  lines: PropTypes.arrayOf(PropTypes.string).isRequired
+  tubeLines: PropTypes.arrayOf(PropTypes.string).isRequired
 };
