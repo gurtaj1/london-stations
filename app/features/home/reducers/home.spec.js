@@ -2,8 +2,8 @@ import {
   HOME_PAGE_REQUEST,
   HOME_PAGE_SUCCESS,
   HOME_PAGE_FAILURE
-} from 'actions/home/home';
-import homeReducer, { defaultState } from 'reducers/home/home';
+} from 'features/home/actions/home';
+import homeReducer, { defaultState } from 'features/home/reducers/home';
 import fixture from './home.fixture';
 
 describe('Reducers', () => {

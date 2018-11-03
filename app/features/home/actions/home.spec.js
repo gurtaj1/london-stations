@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 
-import * as actions from './home';
-import fixture from './home.fixture';
+import * as actions from 'features/home/actions/home';
+import fixture from 'features/home/actions/home.fixture';
 
 describe('Actions', () => {
   describe('Home Actions', () => {
