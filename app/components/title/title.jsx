@@ -7,7 +7,7 @@ import styles from 'components/title/title.scss';
  * Title Component
  * @param {title} param0
  */
-export default function Title ({
+function Title ({
   title
 }) {
   return (
@@ -20,3 +20,5 @@ export default function Title ({
 Title.propTypes = {
   title: PropTypes.string.isRequired
 };
+
+export default Title;

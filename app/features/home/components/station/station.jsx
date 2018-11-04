@@ -6,7 +6,7 @@ import ListItem from 'components/list-item/list-item';
 
 import styles from 'features/home/components/station/station.scss';
 
-const tubeLineColors = {
+export const tubeLineColors = {
   bakerloo: '#996633',
   central: '#CC3333',
   circle: '#FFCC00',
@@ -20,7 +20,7 @@ const tubeLineColors = {
   'waterloo-city': '#66CCCC'
 };
 
-const capitaliseEachWord = string => {
+export const capitaliseEachWord = string => {
   const modifiedString = string.replace('-', ' and ');
   const newString = modifiedString.replace(/\b\w/g, letter => letter.toUpperCase());
 

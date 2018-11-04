@@ -48,7 +48,7 @@ describe('Reducers', () => {
           homeData: [
             {
               name: 'station-name',
-              lines: [
+              tubeLines: [
                 'circle',
                 'district'
               ]

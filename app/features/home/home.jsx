@@ -33,13 +33,11 @@ export default class Home extends Component {
           !this.props.home.homeData
             ? 'loading'
             : this.props.home.homeData.map(station =>
-              (
-              <Station
+              (<Station
                 key={station.name}
                 name={station.name}
                 tubeLines={station.tubeLines}
-              />
-              )
+              />)
             )
         }
       </div>
@@ -58,8 +56,8 @@ Home.propTypes = {
     error: PropTypes.shape({})
   }),
   history: PropTypes.shape({
-    push: PropTypes.func.isRequired
-  }).isRequired
+    push: PropTypes.func
+  })
 };
 
 Home.defaultProps = {
@@ -67,5 +65,6 @@ Home.defaultProps = {
     isFetching: true,
     homeData: [],
     error: null
-  }
+  },
+  history: {}
 };

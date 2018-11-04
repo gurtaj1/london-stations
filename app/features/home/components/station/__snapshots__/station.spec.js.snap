@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home.components Station should render without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Station
+    name="station-name"
+    tubeLines={
+      Array [
+        "circle",
+        "district",
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <div
+          className="station-name"
+        >
+          <Title
+            title="station-name"
+          />
+        </div>,
+        <div
+          className="lines-list"
+        >
+          <ListItem
+            inlineStyleColor="#FFCC00"
+            listItem="Circle"
+          />
+          <ListItem
+            inlineStyleColor="#006633"
+            listItem="District"
+          />
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Title
+            title="station-name"
+          />,
+          "className": "station-name",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": "station-name",
+          "nodeType": "function",
+          "props": Object {
+            "title": "station-name",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ListItem
+              inlineStyleColor="#FFCC00"
+              listItem="Circle"
+            />,
+            <ListItem
+              inlineStyleColor="#006633"
+              listItem="District"
+            />,
+          ],
+          "className": "lines-list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "circle",
+            "nodeType": "function",
+            "props": Object {
+              "inlineStyleColor": "#FFCC00",
+              "listItem": "Circle",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "district",
+            "nodeType": "function",
+            "props": Object {
+              "inlineStyleColor": "#006633",
+              "listItem": "District",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <div
+            className="station-name"
+          >
+            <Title
+              title="station-name"
+            />
+          </div>,
+          <div
+            className="lines-list"
+          >
+            <ListItem
+              inlineStyleColor="#FFCC00"
+              listItem="Circle"
+            />
+            <ListItem
+              inlineStyleColor="#006633"
+              listItem="District"
+            />
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Title
+              title="station-name"
+            />,
+            "className": "station-name",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": "station-name",
+            "nodeType": "function",
+            "props": Object {
+              "title": "station-name",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <ListItem
+                inlineStyleColor="#FFCC00"
+                listItem="Circle"
+              />,
+              <ListItem
+                inlineStyleColor="#006633"
+                listItem="District"
+              />,
+            ],
+            "className": "lines-list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "circle",
+              "nodeType": "function",
+              "props": Object {
+                "inlineStyleColor": "#FFCC00",
+                "listItem": "Circle",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "district",
+              "nodeType": "function",
+              "props": Object {
+                "inlineStyleColor": "#006633",
+                "listItem": "District",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
